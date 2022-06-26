@@ -1,29 +1,27 @@
-:root {
-  --gutter-s: .25rem;
-  --gutter-m: .5rem;
-  --gutter: 1rem;
-  --gutter-l: 1.25rem;
-  --gutter-xl: 1.5rem;
-}
-
 .header {
-  padding: var(--gutter-xl) var(--gutter);
+  padding: var(--gutter-xl) 0;
 
   .clb {
     &-nav {
       display: grid;
-      grid-template-columns: 200px auto 200px;
+      grid-template-columns: 100px auto;
+      align-items: center;
+
+      @media (min-width: 769px) {
+        grid-template-columns: 200px auto 200px;
+      }
 
       &__menu {
-        ul {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        display: none;
 
-          li {
-            margin: 0 var(--gutter-m);
-          }
+        @media (min-width: 769px) {
+          display: block;
         }
+      }
+
+      &__offer {
+        display: flex;
+        justify-content: flex-end;
       }
     }
   }

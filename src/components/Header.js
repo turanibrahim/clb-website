@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Button from "@components/Button";
+import Navigation from "@layouts/Navigation";
 
 export default function Header() {
     return(
@@ -10,16 +12,11 @@ export default function Header() {
                     </div>
 
                     <div className="clb-nav__menu">
-                        <ul>
-                            <li><a className='btn active' href="#about-us">Hakkımızda</a></li>
-                            <li><a className='btn' href="#applications">Uygulamalar</a></li>
-                            <li><a className='btn' href="#activities">Faaliyetler</a></li>
-                            <li><a className='btn' href="#contact-us">Bize Ulaşın</a></li>
-                        </ul>
+                        <Navigation/>
                     </div>
 
-                    <div className="clb-nav-offer">
-                        <a className="btn btn--primary" href="#">Teklif Al</a>
+                    <div className="clb-nav__offer">
+                        <Button className={'btn-primary'} url="#" >Teklif Al</Button>
                     </div>
                 </div>
             </div>

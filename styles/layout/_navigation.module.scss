@@ -1,0 +1,30 @@
+.clb-navigation {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    gap: var(--gutter-m);
+    width: fit-content;
+    border-radius: var(--gutter-xl);
+    background-color: rgba(1,4,21,1);
+    backdrop-filter: blur(8px);
+    padding: var(--gutter-s) var(--gutter-m);
+
+    li {
+      display: flex;
+      border-radius: var(--gutter-xl);
+      overflow: hidden;
+
+      .clb-nav-item {
+        padding: var(--gutter-m) var(--gutter);
+        font-size: .9rem;
+
+        &.active {
+          background-color: hsla(0,0%,100%,.9);
+          color: #141727;
+        }
+      }
+    }
+  }
+}
