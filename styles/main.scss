@@ -4,3 +4,14 @@
 @import "@styles/layout/grid.scss";
 @import "@styles/layout/navigation.module.scss";
 @import "@styles/components/button.module.scss";
+@import "@styles/pages/coming-soon.scss";
+
+#clb-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .main {
+    flex: 1 0 0;
+  }
+}
