@@ -13,11 +13,7 @@ export default function Base(props) {
 
             <Header actions={props.actions}/>
 
-            <main className="main">
-                <div className="container">
-                    {props.children}
-                </div>
-            </main>
+            <main className="main">{props.children}</main>
         </div>
     );
 }
